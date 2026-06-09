@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>AI-Based Drug Drug Interaction Checker</title>
+  <meta name="description" content="Check drug-drug interactions, review medicine benefits, and receive safe medication guidance instantly.">
+  <meta name="keywords" content="drug interaction, medicine safety, healthcare, medication guidance, age-based interaction">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Website: AI-Based Drug Drug Interaction Checker
+  * Purpose: Detect drug interactions, review medicine benefits, and show medicines to avoid together.
+  * Updated: 2026
+  * Base theme: Medicio Bootstrap template
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body class="index-page">
+
+  <div class="scroll-title-banner">Drug Drug Interaction Checker</div>
+
+  <header id="header" class="header sticky-top">
+    <div class="branding d-flex align-items-center">
+      <div class="container position-relative d-flex align-items-center justify-content-end">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <span class="sitename">AI-Based Drug Drug Interaction</span>
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#guidance">Guidance</a></li>
+            <li><a href="#interaction">Checker</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+        <a class="cta-btn" href="#interaction">Check Interactions</a>
+      </div>
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="7000">
+
+        <div class="carousel-item active">
+          <img src="assets/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="container">
+            <h2>AI-Based Drug Drug Interaction Checker</h2>
+            <p>Detect medication interactions, review medicine benefits, and identify drugs that should not be combined.</p>
+            <a href="#interaction" class="btn-get-started">Start the Checker</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="container">
+            <h2>Clear medical interaction insights</h2>
+            <p>Professional medication guidance in a clean, medical-themed interface.</p>
+            <a href="#about" class="btn-get-started">Learn More</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="assets/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="container">
+            <h2>Safer medication choices for every patient</h2>
+            <p>Review interaction warnings, benefits, and medicines to avoid together before each dose.</p>
+            <a href="#interaction" class="btn-get-started">Analyze Now</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Call To Action Section -->
+    <section id="call-to-action" class="call-to-action section accent-background">
+
+      <div class="container">
+        <div class="row justify-content-center" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-xl-10 text-center">
+            <h3>Fast medication safety guidance for every user</h3>
+            <p>Use our AI-driven checker to evaluate drug combinations, benefits, and safe alternatives instantly.</p>
+            <a class="cta-btn" href="#interaction">Run the Checker</a>
+          </div>
+        </div>
+      </div>
+
+    </section><!-- /Call To Action Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About the Interaction Checker</h2>
+        <p>A medical-grade interface for reviewing drug interactions, medicine benefits, and essential precautions.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/about.png" class="img-fluid" alt="Medical safety dashboard">
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <p class="fst-italic">A clean, professional medical design helps patients and clinicians review drug interaction risks with confidence.</p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> Fast AI-assisted drug interaction analysis.</li>
+              <li><i class="bi bi-check2-all"></i> Clear summary of medicine benefits and intended use.</li>
+              <li><i class="bi bi-check2-all"></i> Age-aware precautions for safer medication choices.</li>
+            </ul>
+            <p>Our platform highlights what matters most in medication safety: interactions, contraindications, and medicines to avoid together.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-user-md flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="25" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Doctors</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="far fa-hospital flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Departments</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-flask flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="8" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Research Labs</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+          <div class="col-lg-3 col-md-6">
+            <div class="stats-item d-flex align-items-center w-100 h-100">
+              <i class="fas fa-award flex-shrink-0"></i>
+              <div>
+                <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
+                <p>Awards</p>
+              </div>
+            </div>
+          </div><!-- End Stats Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Stats Section -->
+
+    <!-- Features Section -->
+    <section id="features" class="features section light-background">
+
+      <div class="container">
+
+        <div class="row justify-content-around gy-4">
+          <div class="features-image col-lg-6" data-aos="fade-up" data-aos-delay="100"><img src="assets/img/features.jpg" alt="Medication safety dashboard"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
+            <h3>Why drug interactions matter</h3>
+            <p>Even common medicines can interact in ways that raise risks for bleeding, sedation, blood pressure changes, and organ stress.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="fas fa-bell"></i>
+              <div>
+                <h4><a href="#" class="stretched-link">Prevent Serious Risks</a></h4>
+                <p>Identify interactions that could lead to hospitalizations or serious side effects.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="400">
+              <i class="fas fa-heart-circle"></i>
+              <div>
+                <h4><a href="#" class="stretched-link">Understand Each Drug</a></h4>
+                <p>See the benefits and intended use of the medicines you are taking.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="500">
+              <i class="fas fa-user-shield"></i>
+              <div>
+                <h4><a href="#" class="stretched-link">Use Age-Based Safety</a></h4>
+                <p>Get extra warnings for older adults and other vulnerable populations.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="600">
+              <i class="fas fa-file-medical-alt"></i>
+              <div>
+                <h4><a href="#" class="stretched-link">Choose Safer Alternatives</a></h4>
+                <p>Receive suggestions for medicines that are safer with your existing medications.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /Features Section -->
+
+    <!-- Drug Interaction Checker Section -->
+    <section id="interaction" class="appointment section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Drug-Drug Interaction Checker</h2>
+        <p>Enter your age, condition, and current medicines to generate a medication safety report.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <form id="interaction-form" class="php-email-form">
+          <div class="row gy-3">
+            <div class="col-md-3 form-group">
+              <label for="age" class="form-label">Age</label>
+              <input type="number" name="age" class="form-control" id="age" placeholder="Your Age" min="20" max="100">
+              <small class="text-muted">Optional. Enter age if you want tailored recommendations.</small>
+            </div>
+            <div class="col-md-3 form-group">
+              <label for="weight" class="form-label">Weight (kg)</label>
+              <input type="number" name="weight" class="form-control" id="weight" placeholder="Your weight in kg" min="40" max="200">
+              <small class="text-muted">Optional. Enter weight for more precise advice.</small>
+            </div>
+            <div class="col-md-4 form-group">
+              <label for="disease" class="form-label">Disease or Symptom</label>
+              <input type="text" name="disease" id="disease" list="disease-list" class="form-control" placeholder="e.g. fever, asthma, infection">
+              <datalist id="disease-list">
+                <option value="Pain"></option>
+                <option value="Fever"></option>
+                <option value="Headache"></option>
+                <option value="Inflammation"></option>
+                <option value="Arthritis"></option>
+                <option value="Diabetes"></option>
+                <option value="Type 2 Diabetes"></option>
+                <option value="Type 1 Diabetes"></option>
+                <option value="Hypertension"></option>
+                <option value="Heart Disease"></option>
+                <option value="Atrial Fibrillation"></option>
+                <option value="Arrhythmias"></option>
+                <option value="Angina"></option>
+                <option value="Blood Clots"></option>
+                <option value="Stroke Prevention"></option>
+                <option value="GERD"></option>
+                <option value="Peptic Ulcer"></option>
+                <option value="Acid Reflux"></option>
+                <option value="Bacterial Infection"></option>
+                <option value="Ear Infections"></option>
+                <option value="Throat Infections"></option>
+                <option value="Respiratory Infection"></option>
+                <option value="UTI"></option>
+                <option value="Urinary Tract Infection"></option>
+                <option value="Asthma"></option>
+                <option value="COPD"></option>
+                <option value="High Cholesterol"></option>
+                <option value="Allergies"></option>
+                <option value="Allergic Rhinitis"></option>
+                <option value="Urticaria"></option>
+                <option value="Nausea"></option>
+                <option value="Vomiting"></option>
+                <option value="Depression"></option>
+                <option value="Anxiety"></option>
+                <option value="OCD"></option>
+                <option value="Panic Disorder"></option>
+                <option value="PTSD"></option>
+                <option value="Muscle Spasm"></option>
+                <option value="Alcohol Withdrawal"></option>
+                <option value="Gout"></option>
+                <option value="Gout Prophylaxis"></option>
+                <option value="Hyperuricemia"></option>
+                <option value="Hypothyroidism"></option>
+                <option value="Thyroid Hormone Replacement"></option>
+                <option value="Erectile Dysfunction"></option>
+                <option value="Pulmonary Hypertension"></option>
+                <option value="Benign Prostate Hyperplasia"></option>
+                <option value="Rheumatoid Arthritis"></option>
+                <option value="Autoimmune Disease"></option>
+                <option value="Acne"></option>
+                <option value="Tuberculosis"></option>
+                <option value="Parasitic Infection"></option>
+                <option value="C. difficile Infection"></option>
+                <option value="Lyme Disease"></option>
+                <option value="Cancer"></option>
+                <option value="Transplant Rejection Prevention"></option>
+                <option value="Pericarditis"></option>
+                <option value="Kidney Protection"></option>
+                <option value="Edema"></option>
+                <option value="Adrenal Crisis"></option>
+                <option value="Brain Edema"></option>
+                <option value="Acute Bronchospasm"></option>
+                <option value="Acute Coronary Syndrome"></option>
+                <option value="Venous Thromboembolism"></option>
+                <option value="Heart Valve Replacement"></option>
+                <option value="Acute Gout Attack"></option>
+                <option value="Chronic Pain"></option>
+                <option value="Migraine Prevention"></option>
+                <option value="Acidity"></option>
+                <option value="Fungal Infection"></option>
+                <option value="Skin Infection"></option>
+              </datalist>
+              <small class="text-muted">Start typing to filter the list; supported conditions are shown below.</small>
+              <div class="mt-2" style="max-height: 170px; overflow-y: auto; border: 1px solid #dee2e6; border-radius: 0.35rem; background: #fafafa; padding: 10px;">
+                <strong>Supported conditions:</strong>
+                <div style="font-size: 0.95rem; column-count: 2; column-gap: 1.5rem;">
+                  Pain<br>Fever<br>Headache<br>Inflammation<br>Arthritis<br>Diabetes<br>Type 2 Diabetes<br>Type 1 Diabetes<br>Hypertension<br>Heart Disease<br>Atrial Fibrillation<br>Arrhythmias<br>Angina<br>Blood Clots<br>Stroke Prevention<br>GERD<br>Peptic Ulcer<br>Acid Reflux<br>Bacterial Infection<br>Ear Infections<br>Throat Infections<br>Respiratory Infection<br>UTI<br>Urinary Tract Infection<br>Asthma<br>COPD<br>High Cholesterol<br>Allergies<br>Allergic Rhinitis<br>Urticaria<br>Nausea<br>Vomiting<br>Depression<br>Anxiety<br>OCD<br>Panic Disorder<br>PTSD<br>Muscle Spasm<br>Alcohol Withdrawal<br>Gout<br>Gout Prophylaxis<br>Hyperuricemia<br>Hypothyroidism<br>Thyroid Hormone Replacement<br>Erectile Dysfunction<br>Pulmonary Hypertension<br>Benign Prostate Hyperplasia<br>Rheumatoid Arthritis<br>Autoimmune Disease<br>Acne<br>Tuberculosis<br>Parasitic Infection<br>C. difficile Infection<br>Lyme Disease<br>Cancer<br>Transplant Rejection Prevention<br>Pericarditis<br>Kidney Protection<br>Edema<br>Adrenal Crisis<br>Brain Edema<br>Acute Bronchospasm<br>Acute Coronary Syndrome<br>Venous Thromboembolism<br>Heart Valve Replacement<br>Acute Gout Attack<br>Chronic Pain<br>Migraine Prevention<br>Acidity<br>Fungal Infection<br>Skin Infection
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 form-group">
+              <label for="medicine-1" class="form-label">Medicine 1</label>
+              <select id="medicine-1" class="form-select" required size="8" style="min-height: 240px;">
+                <option value="" disabled selected>Select first medicine</option>
+              </select>
+              <small class="text-muted d-block mt-1">Scroll the list and choose the first medicine.</small>
+            </div>
+            <div class="col-md-4 form-group">
+              <label for="medicine-2" class="form-label">Medicine 2</label>
+              <select id="medicine-2" class="form-select" required size="8" style="min-height: 240px;">
+                <option value="" disabled selected>Select second medicine</option>
+              </select>
+              <small class="text-muted d-block mt-1">Scroll the list and choose the second medicine.</small>
+            </div>
+          </div>
+
+          <div class="row gy-3 mt-3">
+            <div class="col-md-6">
+              <div class="border rounded p-3 bg-white shadow-sm">
+                <h5 class="mb-2">Selected Medicine 1</h5>
+                <p id="selected-medicine-1" class="mb-0 text-muted">No medicine selected yet.</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="border rounded p-3 bg-white shadow-sm">
+                <h5 class="mb-2">Selected Medicine 2</h5>
+                <p id="selected-medicine-2" class="mb-0 text-muted">No medicine selected yet.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-3">
+            <button type="submit" class="btn-get-started">Analyze Interactions</button>
+          </div>
+          <div class="form-group mt-4">
+            <div id="interaction-results"></div>
+          </div>
+        </form>
+
+      </div>
+
+    </section><!-- /Drug Interaction Checker Section -->
+
+    <!-- Safety Guidance Section -->
+    <section id="guidance" class="services section light-background">
+
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Safety Guidance</h2>
+        <p>Key rules for avoiding dangerous drug combinations and using medicines safely.</p>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-heartbeat"></i></div>
+              <h4><a href="#" class="stretched-link">Watch for bleeding risks</a></h4>
+              <p>Some medications increase bleeding risk when combined. Check the interaction report before use.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-stethoscope"></i></div>
+              <h4><a href="#" class="stretched-link">Avoid sedation overlap</a></h4>
+              <p>Combining sedatives and pain medicines can cause excessive drowsiness or breathing issues.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-pills"></i></div>
+              <h4><a href="#" class="stretched-link">Review age-sensitive warnings</a></h4>
+              <p>Older adults may need lower doses or alternative drugs to reduce side effects.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-exclamation-triangle"></i></div>
+              <h4><a href="#" class="stretched-link">Know what to avoid</a></h4>
+              <p>Our checker highlights medicines that should not be combined for your condition.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-notes-medical"></i></div>
+              <h4><a href="#" class="stretched-link">Understand medicine benefits</a></h4>
+              <p>Each recommendation includes the main benefit so you can compare options confidently.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-user-shield"></i></div>
+              <h4><a href="#" class="stretched-link">Stay informed</a></h4>
+              <p>Follow guidance from the interaction report and consult your healthcare provider for final decisions.</p>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+
+    </section><!-- /Safety Guidance Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span class="sitename">AI-Based Drug Drug Interaction</span>
+          </a>
+        </div>
+
+        <div class="col-lg-2 col-md-3 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Guidance</a></li>
+            <li><a href="#">Checker</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-links">
+          <h4>Resources</h4>
+          <ul>
+            <li><a href="#">Safety Alerts</a></li>
+            <li><a href="#">Interaction Help</a></li>
+            <li><a href="#">Medication Tips</a></li>
+            <li><a href="#">Support</a></li>
+            <li><a href="#">Policies</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+      <p>© <span>2026</span> <strong class="px-1 sitename">AI-Based Drug Drug Interaction Checker</strong>. All Rights Reserved.</p>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+  <!-- Medicine Recommendation Engine -->
+  <script src="assets/js/medicine-recommendations.js"></script>
+
+</body>
+
+</html>
